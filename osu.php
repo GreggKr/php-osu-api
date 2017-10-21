@@ -64,7 +64,7 @@ class Osu {
     }
 
     public function get_token() {
-        return $token;
+        return $this->token;
     }
 }
 
