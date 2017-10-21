@@ -67,5 +67,3 @@ class Osu {
         return $this->token;
     }
 }
-
-?>
