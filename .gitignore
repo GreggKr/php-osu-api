@@ -1,4 +1,4 @@
 # Ignore the testing page (contains sensitive information)
 index.php
 .idea/
-.idea/**/*.xml 
+.idea/**/*.xml
