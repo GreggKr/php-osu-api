@@ -53,8 +53,10 @@ class Osu {
 
     private function get_json($url) {
         ini_set("allow_url_fopen", 1);
-        $json = json_decode(file_get_contents("https://osu.ppy.sh/api" . $url), true);
+        $data = @file_get_contents("https://osu.ppy.sh/api" . $url);
         ini_set("allow_url_fopen", 0);
+        if(!$data || empty($data)) return null;
+        $json = json_decode($data, true);
 
         return $json;
     }
